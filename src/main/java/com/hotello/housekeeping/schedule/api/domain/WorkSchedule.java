@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -23,11 +24,11 @@ public class WorkSchedule implements Serializable {
     @Field("schedule_date")
     private LocalDate scheduleDate;
 
-    @Field("room_no")
-    private String roomNo;
+    @Field("rooms")
+    private List<Room> rooms;
 
-    @Field("cleaner_name")
-    private String cleanerName;
+    @Field("cleaners")
+    private List<Cleaner> cleaners;
 
     @Field("desc")
     private String desc;
@@ -53,30 +54,20 @@ public class WorkSchedule implements Serializable {
         this.scheduleDate = scheduleDate;
     }
 
-    public String getRoomNo() {
-        return roomNo;
+    public List<Room> getRooms() {
+        return rooms;
     }
 
-    public WorkSchedule roomNo(String roomNo) {
-        this.roomNo = roomNo;
-        return this;
+    public void setRooms(List<Room> rooms) {
+        this.rooms = rooms;
     }
 
-    public void setRoomNo(String roomNo) {
-        this.roomNo = roomNo;
+    public List<Cleaner> getCleaners() {
+        return cleaners;
     }
 
-    public String getCleanerName() {
-        return cleanerName;
-    }
-
-    public WorkSchedule cleanerName(String cleanerName) {
-        this.cleanerName = cleanerName;
-        return this;
-    }
-
-    public void setCleanerName(String cleanerName) {
-        this.cleanerName = cleanerName;
+    public void setCleaners(List<Cleaner> cleaners) {
+        this.cleaners = cleaners;
     }
 
     public String getDesc() {
@@ -117,8 +108,8 @@ public class WorkSchedule implements Serializable {
         return "WorkSchedule{" +
             "id=" + id +
             ", scheduleDate='" + scheduleDate + "'" +
-            ", roomNo='" + roomNo + "'" +
-            ", cleanerName='" + cleanerName + "'" +
+            ", rooms='" + rooms.iterator().toString() + "'" +
+            ", cleaners='" + cleaners.iterator().toString() + "'" +
             ", desc='" + desc + "'" +
             '}';
     }

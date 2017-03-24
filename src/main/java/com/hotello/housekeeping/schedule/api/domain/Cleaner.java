@@ -90,6 +90,13 @@ public class Cleaner implements Serializable {
         return Objects.equals(id, cleaner.id);
     }
 
+    public Cleaner(String cleanerName) {
+        this.cleanerName = cleanerName;
+    }
+
+    public Cleaner() {
+    }
+
     @Override
     public int hashCode() {
         return Objects.hashCode(id);

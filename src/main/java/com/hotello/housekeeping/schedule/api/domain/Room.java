@@ -106,6 +106,13 @@ public class Room implements Serializable {
         return Objects.equals(id, room.id);
     }
 
+    public Room() {
+    }
+
+    public Room(String roomNo) {
+        this.roomNo = roomNo;
+    }
+
     @Override
     public int hashCode() {
         return Objects.hashCode(id);
