@@ -103,14 +103,25 @@ public class WorkSchedule implements Serializable {
         return Objects.hashCode(id);
     }
 
+//    @Override
+//    public String toString() {
+//        return "WorkSchedule{" +
+//            "id=" + id +
+//            ", scheduleDate='" + scheduleDate + "'" +
+//            ", rooms='" + rooms.iterator().toString() + "'" +
+//            ", cleaners='" + cleaners.iterator().toString() + "'" +
+//            ", desc='" + desc + "'" +
+//            '}';
+//    }
+
     @Override
     public String toString() {
         return "WorkSchedule{" +
-            "id=" + id +
-            ", scheduleDate='" + scheduleDate + "'" +
-            ", rooms='" + rooms.iterator().toString() + "'" +
-            ", cleaners='" + cleaners.iterator().toString() + "'" +
-            ", desc='" + desc + "'" +
-            '}';
+                "id='" + id + '\'' +
+                ", scheduleDate=" + scheduleDate +
+                ", rooms=" + rooms +
+                ", cleaners=" + cleaners +
+                ", desc='" + desc + '\'' +
+                '}';
     }
 }
