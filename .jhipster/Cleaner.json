@@ -1,0 +1,24 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "cleanerName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "floorPreferance",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "phoneNo",
+            "fieldType": "String"
+        }
+    ],
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "cleaner",
+    "pagination": "pagination",
+    "microserviceName": "backendapi",
+    "searchEngine": false
+}

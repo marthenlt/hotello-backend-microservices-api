@@ -1,0 +1,28 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "scheduleDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "roomNo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cleanerName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "desc",
+            "fieldType": "String"
+        }
+    ],
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "work_schedule",
+    "pagination": "pagination",
+    "microserviceName": "backendapi",
+    "searchEngine": false
+}

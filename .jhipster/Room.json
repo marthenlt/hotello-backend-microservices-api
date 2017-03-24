@@ -1,0 +1,28 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "roomNo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "roomType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "floorNo",
+            "fieldType": "Integer"
+        }
+    ],
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "room",
+    "pagination": "pagination",
+    "microserviceName": "backendapi",
+    "searchEngine": false
+}
