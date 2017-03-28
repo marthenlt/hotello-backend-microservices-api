@@ -85,7 +85,7 @@ jhipster:
         #allow-credentials: true
         #max-age: 1800
     mail:
-        from: backendapi@192.168.25.128
+        from: backendapi@localhost
     swagger:
         default-include-pattern: /api/.*
         title: backendapi API

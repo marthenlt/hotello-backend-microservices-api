@@ -18,7 +18,7 @@ spring:
     cloud:
         config:
             fail-fast: true
-            uri: http://admin:${jhipster.registry.password}@192.168.25.128:8761/config
+            uri: http://admin:${jhipster.registry.password}@${JHIPSTER_REGISTRY_SERVER_IP}:${JHIPSTER_REGISTRY_SERVER_PORT}/config
             # name of the config server's property source (file.yml) that we want to use
             name: backendapi
             profile: dev # profile(s) of the property source
